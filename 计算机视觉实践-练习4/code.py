@@ -14,8 +14,8 @@ image1 = cv2.imread("./paris_images_with_warps/paris_b.jpg")
 image2 = cv2.imread("./paris_images_with_warps/paris_a.jpg")
 A = image1.copy()
 B = image2.copy()
-imageA = cv2.resize(A,(0,0),fx=0.5,fy=0.5)
-imageB = cv2.resize(B,(0,0),fx=0.5,fy=0.5)
+imageA = cv2.resize(A,(0,0),fx=1,fy=1)
+imageB = cv2.resize(B,(0,0),fx=1,fy=1)
 
 #show(" ",imageA)
 #检测图片的SIFT关键特征点，计算特征描述子
